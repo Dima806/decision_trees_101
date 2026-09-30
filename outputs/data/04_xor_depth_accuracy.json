@@ -1,0 +1,42 @@
+{
+  "seed": 42,
+  "xor_accuracy_vs_depth": [
+    {
+      "depth": 1.0,
+      "train": 0.54,
+      "test": 0.54,
+      "gap": 0.0
+    },
+    {
+      "depth": 2.0,
+      "train": 0.57,
+      "test": 0.57,
+      "gap": 0.0
+    },
+    {
+      "depth": 3.0,
+      "train": 0.6225,
+      "test": 0.6225,
+      "gap": 0.0
+    },
+    {
+      "depth": 4.0,
+      "train": 0.9325,
+      "test": 0.9325,
+      "gap": 0.0
+    },
+    {
+      "depth": 5.0,
+      "train": 0.9725,
+      "test": 0.9725,
+      "gap": 0.0
+    },
+    {
+      "depth": 6.0,
+      "train": 0.9825,
+      "test": 0.9825,
+      "gap": 0.0
+    }
+  ],
+  "depth1_gain": 0.0221408333333335
+}

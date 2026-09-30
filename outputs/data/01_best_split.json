@@ -1,0 +1,15 @@
+{
+  "seed": 42,
+  "n_samples": 200,
+  "hand_best": {
+    "feature": 0,
+    "threshold": 0.2522917432725502,
+    "gain": 0.5
+  },
+  "splitter_best": {
+    "feature": 0,
+    "threshold": 0.2522917432725502,
+    "gain": 0.5
+  },
+  "stump_train_accuracy": 1.0
+}

@@ -1,0 +1,10 @@
+{
+  "xor_clean_fit": {
+    "greedy_stump": 0.54,
+    "forest": 1.0
+  },
+  "noisy_moons_test": {
+    "single_full_tree": 0.75,
+    "forest": 0.8083333333333333
+  }
+}

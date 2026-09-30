@@ -1,0 +1,7 @@
+{
+  "max_depth": "How many questions deep the greedy recursion may go. Lower = coarser staircase = more regularization.",
+  "min_samples_leaf": "Refuse a split that would leave a tiny leaf. Directly blocks the wrap-around-each-point memorization.",
+  "min_samples_split": "Do not even search for a split in a node smaller than this. A cheaper cousin of min_samples_leaf.",
+  "criterion": "The impurity scored at each split: gini or entropy for classification, mse for regression. Choice rarely matters much (notebook 03).",
+  "ccp_alpha": "Cost-complexity pruning strength applied after growth. Larger prunes more (notebook 05)."
+}

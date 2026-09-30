@@ -1,0 +1,6 @@
+{
+  "information_gain_bits": 0.34470749865977834,
+  "mutual_information_bits": 0.34470749865977846,
+  "sklearn_mutual_information_bits": 0.34470749865977696,
+  "max_abs_difference": 1.3877787807814457e-15
+}

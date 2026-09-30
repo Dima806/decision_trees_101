@@ -1,0 +1,18 @@
+# Central knobs for datasets, the tree, and the forest preview.
+# Loaded by src/config.py via pydantic-settings. Seeds keep everything reproducible.
+seed: 42
+
+data:
+  n_samples: 400
+  noise: 0.2
+
+tree:
+  criterion: gini          # gini | entropy (classification), mse (regression)
+  max_depth: 5
+  min_samples_split: 2
+  min_samples_leaf: 1
+  min_impurity_decrease: 0.0
+
+forest:
+  n_estimators: 200
+  max_samples: 0.8

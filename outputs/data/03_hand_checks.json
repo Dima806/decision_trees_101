@@ -1,0 +1,8 @@
+{
+  "gini_pure": 0.0,
+  "gini_balanced": 0.5,
+  "entropy_pure_bits": -0.0,
+  "entropy_balanced_bits": 1.0,
+  "mse_constant": 0.0,
+  "mse_0_and_2": 1.0
+}

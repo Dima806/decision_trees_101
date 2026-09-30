@@ -1,0 +1,63 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "decision-trees-101"
+version = "0.1.0"
+description = "Decision trees 101: the greedy little algorithm inside every model you trust"
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+requires-python = ">=3.11"
+authors = [{ name = "Dmytro Iakubovskyi" }]
+dependencies = [
+    "scikit-learn>=1.5",
+    "numpy>=1.26",
+    "scipy>=1.14",
+    "pandas>=2.2",
+    "matplotlib>=3.9",
+    "plotly>=5.22",
+    "streamlit>=1.38",
+    "pydantic>=2.9",
+    "pydantic-settings>=2.5",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3",
+    "pytest-cov>=5.0",
+    "ruff>=0.8",
+    "ty>=0.0.1a7",
+    "jupyter>=1.1",
+    "ipykernel>=6.29",
+    "nbconvert>=7.16",
+    "nbclient>=0.10",
+]
+
+# `src/` is the import package (per PRD layout); install it editable so
+# notebooks, tests, and the app can all `import src.tree...` uniformly.
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 99
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "N", "B", "A", "SIM", "PTH"]
+# N803/N806: allow uppercase `X` (feature matrix) as arg/var — sklearn convention.
+ignore = ["E501", "N803", "N806"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"
+pythonpath = ["."]
+
+[tool.coverage.run]
+source = ["src"]
+omit = ["tests/*"]
+
+[tool.coverage.report]
+show_missing = true
